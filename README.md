@@ -8,6 +8,10 @@ Post an issue for any questions/comments/requests!
 
 This starter is configured to use FontAwesome Icons, rather than the default Material Design Icons.
 
+Preview this starter here: 
+
+https://festive-lalande-6eaf50.netlify.com/
+
 # Default starter for Gridsome
 
 This is the project you get when you run `gridsome create new-project`.
