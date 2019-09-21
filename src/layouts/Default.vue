@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Header/>
-    <v-container fill-height>
+    <v-container fill-height class="d-sm-none d-md-flex">
       <slot/>
     </v-container>
     <Footer/>

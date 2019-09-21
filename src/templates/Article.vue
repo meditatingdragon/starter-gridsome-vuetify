@@ -1,19 +1,22 @@
 <template>
   <Layout>
     <v-container>
-        <v-card class="ma-5">
+      <div class="d-flex">
+        <v-card class="ma-sm-5 xs-sm-6">
         <v-img height="500px" :src="$page.article.preview_image">
         </v-img>
         
         <v-card-text>
-          <h3 class="teal--text font-weight-bold mx-0 display-2 px-5">{{$page.article.title}}</h3>
+          <h3 class="teal--text font-weight-bold mx-0 display-2 px-xs-5">{{$page.article.title}}</h3>
           <br/>
-          <span class="px-5">{{$page.article.author}} | Date: {{$page.article.date}} | Time: {{$page.article.timeToRead}} to read</span>
-          <div class="pa-5 body-1">
+          <span class="px-xs-5">{{$page.article.author}}</span><br/>
+          <span class="px-xs-5">Date: {{$page.article.date}} | Time: {{$page.article.timeToRead}} to read</span>
+          <div class="pa-xs-5 body-1">
             <ArticleContent :content="$page.article.content" />
           </div>
         </v-card-text>
         </v-card>
+      </div>
     </v-container>
   </Layout>
 </template>

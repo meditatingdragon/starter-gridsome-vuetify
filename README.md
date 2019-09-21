@@ -6,6 +6,8 @@ Customize to your liking. Started with one Article Markdown collection located a
 
 Post an issue for any questions/comments/requests!
 
+This starter is configured to use FontAwesome Icons, rather than the default Material Design Icons.
+
 # Default starter for Gridsome
 
 This is the project you get when you run `gridsome create new-project`.

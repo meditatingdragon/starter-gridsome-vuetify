@@ -1,32 +1,23 @@
 <template>
   <Layout>
-    <v-card
-        class="ma-5"
+        <v-card class="mx-sm-auto"
         v-for="item in $page.articles.edges"
         :key="item.node.id"
         :href="item.node.path"
-      >
-        <v-img height="400px" :src="item.node.preview_image">
-          
+        >
+        <v-img height="500px" :src="item.node.preview_image">
         </v-img>
         
         <v-card-text>
-          <span class="teal--text font-weight-bold mx-0 display-1">{{item.node.title}}</span>
+          <h3 class="teal--text font-weight-bold mx-0 display-2 px-xs-5">{{item.node.title}}</h3>
           <br/>
-          <span class="subtitle-1">{{item.node.author}}</span>
-          <br />
-          <span class="text--primary">
-            <span>{{item.node.date}}</span>
-            <br />
-            <span>{{item.node.excerpt}}</span>
-          </span>
+          <span class="px-xs-5">{{item.node.author}}</span><br/>
+          <span class="px-xs-5">Date: {{item.node.date}} | Time: {{item.node.timeToRead}} to read</span>
         </v-card-text>
-
-        <v-card-actions>
+         <v-card-actions>
           <v-btn text color="orange" :href="item.node.path">Read More</v-btn>
         </v-card-actions>
-      </v-card>
-
+        </v-card>
   </Layout>
 </template>
 

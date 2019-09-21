@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <v-container>
-      <div class="d-flex-row d-inline-flex">
+      <div class="d-flex-row d-block flex-wrap d-sm-inline-flex">
       <v-card
-        class="ma-5"
-        max-width="400"
+        class="ma-sm-2 my-5"
+        max-width="375"
         v-for="item in $page.articles.edges"
         :key="item.node.id"
         :href="item.node.path"
