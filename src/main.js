@@ -1,27 +1,40 @@
-import Vuetify from 'vuetify'
-import DefaultLayout from '~/layouts/Default.vue'
+import Vuetify from "vuetify";
+import DefaultLayout from "~/layouts/Default.vue";
 
-import 'vuetify/dist/vuetify.min.css'
+import "vuetify/dist/vuetify.min.css";
+import colors from "vuetify/lib/util/colors";
 
-export default function (Vue, { appOptions, head }) {
+export default function(Vue, { appOptions, head }) {
   head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
-  })
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+  });
   head.link.push({
-    rel: 'stylesheet',
-    href: 'https://use.fontawesome.com/releases/v5.10.2/css/all.css'
-  })
-  
+    rel: "stylesheet",
+    href: "https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+  });
+
   const opts = {
     icons: {
-      iconfont: 'fa', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
+      iconfont: "fa" // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
     },
-   }
-  Vue.use(Vuetify)
-  
+    // adjust the theme if you would like to
+    theme: {
+      light: {
+        primary: "#1976D2",
+        secondary: "#424242",
+        accent: "#82B1FF",
+        error: "#FF5252",
+        info: "#2196F3",
+        success: "#4CAF50",
+        warning: "#FFC107"
+      },
+    }
+  };
+  Vue.use(Vuetify);
+
   appOptions.vuetify = new Vuetify(opts);
-  
+
   // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
+  Vue.component("Layout", DefaultLayout);
 }
