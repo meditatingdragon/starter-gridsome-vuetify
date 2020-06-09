@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@gridsome/remark-prismjs": "^0.2.0",
-    "gridsome": "^0.7.0",
-    "vuetify": "^2.0.18"
+    "gridsome": "^0.7.17",
+    "vuetify": "^2.2.33"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
