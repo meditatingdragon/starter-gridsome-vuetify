@@ -20,9 +20,7 @@
           read</span
         >
       </v-card-text>
-      <v-card-actions>
-        <v-btn text color="orange" :href="item.node.path">Read More</v-btn>
-      </v-card-actions>
+      <v-btn text color="orange" :href="item.node.path">Read More</v-btn>
     </v-card>
   </Layout>
 </template>
