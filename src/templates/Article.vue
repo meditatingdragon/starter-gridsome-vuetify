@@ -14,7 +14,7 @@
             ><br />
             <span class="px-xs-5"
               >Date: {{ $page.article.date }} | Time:
-              {{ $page.article.timeToRead }} to read</span
+              {{ $page.article.timeToRead }} min to read</span
             >
             <div class="pa-xs-5 body-1">
               <ArticleContent :content="$page.article.content" />
