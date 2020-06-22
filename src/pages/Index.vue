@@ -16,7 +16,7 @@
         <span class="px-xs-5">{{ item.node.author }}</span
         ><br />
         <span class="px-xs-5"
-          >Date: {{ item.node.date }} | Time: {{ item.node.timeToRead }} to
+          >Date: {{ item.node.date }} | Time: {{ item.node.timeToRead }} min to
           read</span
         >
       </v-card-text>
@@ -36,6 +36,7 @@
           preview_image (quality: 90)
           title
           published
+          timeToRead
           excerpt
         }
       }
